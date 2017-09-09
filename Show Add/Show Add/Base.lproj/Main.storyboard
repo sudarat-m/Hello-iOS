@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Show_Add" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ales-krivec-107499.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uoN-qF-f1W">
+                                <rect key="frame" x="1" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Add" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uic-Wl-3Wd">
+                                <rect key="frame" x="115" y="30" width="145" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.074363715946674347" green="0.091025315225124359" blue="0.81002384424209595" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZLV-Kv-9DU">
+                                <rect key="frame" x="137.5" y="102" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="vZl-rr-p9y"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UsL-pL-qKi">
+                                <rect key="frame" x="269" y="96" width="53" height="104"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="87"/>
+                                <color key="textColor" red="0.76760238409042358" green="0.016655093058943748" blue="0.98274689912796021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="x56-f0-Pjj">
+                                <rect key="frame" x="172.5" y="297" width="30" height="30"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCp-AM-gpc">
+                                <rect key="frame" x="137" y="227" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.0063614803366363049" green="0.95797556638717651" blue="0.99399310350418091" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" red="0.047765083611011505" green="0.89449304342269897" blue="0.96331983804702759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="CalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fHJ-DJ-D3i"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6w0-HC-9ID">
+                                <rect key="frame" x="159" y="170" width="79" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Fly-Ux-7kn"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXP-ac-uLR">
+                                <rect key="frame" x="89" y="505" width="199" height="51"/>
+                                <color key="backgroundColor" red="0.8223375678062439" green="0.91731256246566772" blue="0.040695063769817352" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.15614968538284302" green="0.051715895533561707" blue="0.89374953508377075" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZLV-Kv-9DU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DOh-N7-J1B"/>
+                            <constraint firstItem="ZLV-Kv-9DU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Djb-Xc-pjp"/>
+                            <constraint firstItem="ZLV-Kv-9DU" firstAttribute="top" secondItem="uic-Wl-3Wd" secondAttribute="bottom" constant="36" id="I7j-0k-xu5"/>
+                            <constraint firstItem="ZLV-Kv-9DU" firstAttribute="top" secondItem="uic-Wl-3Wd" secondAttribute="bottom" constant="36" id="Lgu-TP-mp4"/>
+                            <constraint firstItem="UsL-pL-qKi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NZJ-yb-fgf"/>
+                            <constraint firstItem="UsL-pL-qKi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="QxH-VO-4kR"/>
+                            <constraint firstItem="uic-Wl-3Wd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZXc-7a-iWp"/>
+                            <constraint firstItem="6w0-HC-9ID" firstAttribute="top" secondItem="ZLV-Kv-9DU" secondAttribute="bottom" constant="38" id="dJh-Kv-yMK"/>
+                            <constraint firstItem="UsL-pL-qKi" firstAttribute="top" secondItem="ZLV-Kv-9DU" secondAttribute="bottom" constant="31" id="lKA-p6-EDE"/>
+                            <constraint firstItem="x56-f0-Pjj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ntf-wF-SMJ"/>
+                            <constraint firstItem="uic-Wl-3Wd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="qQ9-Rc-hhU"/>
+                            <constraint firstItem="CXP-ac-uLR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qdW-lZ-gj8"/>
+                            <constraint firstItem="OCp-AM-gpc" firstAttribute="top" secondItem="6w0-HC-9ID" secondAttribute="bottom" constant="27" id="s06-W0-R4Z"/>
+                            <constraint firstItem="x56-f0-Pjj" firstAttribute="top" secondItem="UsL-pL-qKi" secondAttribute="bottom" constant="30" id="uJx-YC-kAA"/>
+                            <constraint firstItem="6w0-HC-9ID" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xuJ-6Z-zK6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerOutlet" destination="CXP-ac-uLR" id="yA8-6e-vqd"/>
+                        <outlet property="xOutlet" destination="ZLV-Kv-9DU" id="bLV-Yr-3h2"/>
+                        <outlet property="yOutlet" destination="6w0-HC-9ID" id="SL5-yl-NhH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-268" y="63.418290854572717"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ales-krivec-107499.jpg" width="7360" height="4475"/>
+    </resources>
+</document>
