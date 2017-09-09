@@ -5,13 +5,18 @@ import UIKit
 
 
 
-var nameDictionary = ["korean": "เกาหลี","japan": "ญี่ปุ่น"]
+var nameDictionary = ["korean" : "1111","japan" : "2222"]
 print("ขนาดของ Dictionary==>\(nameDictionary.count)")
 
-print("nameDictionary ที่มีค่า key คือ korean==>\(String(nameDictionary["korean"]))")
+print("nameDictionary ที่มีค่า key คือ korean==>\(String(nameDictionary["korean"]!))")
 
 
-print("nameDictionary ที่มีค่า key คือ japan==>\(String(nameDictionary["japan"]))")
+print("nameDictionary ที่มีค่า key คือ japan==>\(String(nameDictionary["japan"]!))")
+
+
+//Get unkey
+print("nameDiction ของ key ที่ไม่มี\(nameDictionary["doraemon"]!)")
+
 
 
 
