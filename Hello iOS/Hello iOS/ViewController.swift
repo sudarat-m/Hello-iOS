@@ -29,6 +29,9 @@ class ViewController: UIViewController {
         
         nameString = nameTextField.text!
         print("You type ==>\(nameString)")
+        nameLabel.text = nameString
+        
+        
         
         
         
