@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     var userString=""
     var passwordString=""
     
-    let alertArray = ["User False","Password False","Welcom User"]
+    let alertArray = ["User False","Password False","Welcome User"]
     
     
     
@@ -36,6 +36,27 @@ class ViewController: UIViewController {
         userString = userTextField.text!
         passwordString=passwordTextField.text!
         
+        print("user ==>\(userString)")
+        print("password ==>\(passwordString)")
+        
+        let resultString = loginDictionary[userString]
+        print("result ==>\(String(describing: resultString))")
+        
+
+        if (resultString==nil) {
+                print("Have Nil")
+            messageLabel.text=alertArray[0]
+        }else{
+            
+            //User true
+            let truePassword = resultString
+            
+            if (passwordString == truePassword){
+                    messageLabel.text = alertArray[2]
+            }else{
+                messageLabel.text = alertArray[1]
+            }
+        }
         
         
         
