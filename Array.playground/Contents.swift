@@ -16,11 +16,13 @@ print("numberAints[4]==>\(numberAInts[1])")
 
 //add member
 numberAInts.append(66)
-numberAInts
+
 
 
 //delete member
 numberAInts.remove(at: 1)
+numberAInts
+
 
 
 
